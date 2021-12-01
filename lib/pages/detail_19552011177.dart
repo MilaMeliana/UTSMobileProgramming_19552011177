@@ -102,119 +102,124 @@ class DetailPage extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(15.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            SizedBox(height: 30),
-            Align(
-              alignment: Alignment.center,
-              child: Image.asset(
-                produk.image!,
-                width: MediaQuery.of(context).size.width / 1.5,
-              ),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          SizedBox(height: 30),
+          Align(
+            alignment: Alignment.center,
+            child: Image.asset(
+              produk.image!,
+              width: MediaQuery.of(context).size.width / 1.5,
             ),
-            SizedBox(height: 30),
-            Text.rich(
-              TextSpan(
-                children: [
-                  TextSpan(
-                    text: 'Instax ',
-                    style: TextStyle(
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold,
+          ),
+          SizedBox(height: 30),
+          Text.rich(
+            TextSpan(
+              children: [
+                TextSpan(
+                  text: 'Instax ',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                TextSpan(
+                  text: produk.cameraName!,
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                    color: Color(
+                      produk.color!,
                     ),
                   ),
-                  TextSpan(
-                    text: produk.cameraName!,
-                    style: TextStyle(
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold,
-                      color: Color(
-                        produk.color!,
-                      ),
-                    ),
-                  ),
-                ],
+                ),
+              ],
+            ),
+          ),
+          Column(
+            children: [
+              Text(
+                  "Be real and fun with the INSTAX MINI 7+. Cool design, colorful and compact, this instant camera is fun and easy to use. Point and shoot and give your day some fun!"),
+              Padding(
+                padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
+                child: Text(
+                  "Point & Shoot",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold),
+                ),
               ),
-            ),
-            SizedBox(height: 10),
-            Text(
-              'Be real and fun with the INSTAX MINI 7+ Cool design, colorful and compact, this instant camera is fun and esay to use. Point and shoot and girve your day some fun!',
-            ),
-            SizedBox(height: 10),
-            Text(
-              'Point & Shoot',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
+              Text(
+                  "The Mini 7+ is easy to use! Simply point and shoot! With its exposure control adjustment and 60mm fixed-focus lens, the Mini 7+ makes it easy for you to be creative and live in the moment."),
+              Padding(
+                padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
+                child: Text(
+                  "Mini But With Full-Size Memories",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold),
+                ),
               ),
-            ),
-            SizedBox(height: 10),
-            Text(
-              'The Mini 7+ is esay to use! Simply point and shoot! With its exposure control adjustment and 60mm fixed focus lens, the Mini 7+ makes it esay for you to be creative and live in the moment.',
-            ),
-            SizedBox(height: 10),
-            Text(
-              'Mini But With Full-Size Memories',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
+              Text(
+                  "Pop it in your wallet, stick it to your wall – the INSTAX Mini film brings you instant 2 x 3 sized photos you can show and tell. Using professional high-quality film technology (as you’d expect from Fujifilm), your festival frolicking, sun worshipping, crowd surfing memories that you print will transport you right back into that moment."),
+              Padding(
+                padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
+                child: Text(
+                  "Mini Film",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold),
+                ),
               ),
-            ),
-            SizedBox(height: 10),
-            Text(
-              'Pop it in your wallet, stick it to your wall-the INSTAX Mini film brings you instant 2 x 3 sized photos you can show and tell.\n\nUsing professional hight-quality film technology (as you\'d expect from m Fujifilm), your festival frolicking, sun worshipping, crowd surfing memories that you print will transport you right back into that moment.',
-            ),
-            SizedBox(height: 10),
-            Text(
-              'Mini Film',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
+              Text(
+                  "Mini moments with maximum impact. What’s your next mini moment?"),
+              Padding(
+                padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
+                child: Text(
+                  "Plenty of Great Color Choices",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold),
+                ),
               ),
-            ),
-            SizedBox(height: 10),
-            Text(
-              'Mini moments with maximum impact. What’s your next mini moment?',
-            ),
-            SizedBox(height: 10),
-            Text(
-              'Plenty of Great Color Choices',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
+              Text(
+                  "Available in five awesome colors: Lavender, Seafoam Green, Coral, Light Pink & Light Blue"),
+              Padding(
+                padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
+                child: Text(
+                  "The Mini 7+ Has Your Back!",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold),
+                ),
               ),
-            ),
-            SizedBox(height: 10),
-            Text(
-              'Available in five awesome colors: Lavender, Seafoam Green, Coral, Light Pink & Light Blue',
-            ),
-            SizedBox(height: 10),
-            Text(
-              'The Mini 7+ Has Your Back!',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
+              Text(
+                  "Depending upon the weather conditions, you can easily control brightness to obtain a great picture"),
+              Padding(
+                padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
+                child: Text(
+                  "Fun All The Time!",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold),
+                ),
               ),
-            ),
-            SizedBox(height: 10),
-            Text(
-              'Depending upon the weather conditions, you can easily control brightness to obtain a great picture',
-            ),
-            SizedBox(height: 10),
-            Text(
-              'Fun All The Time!',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            SizedBox(height: 10),
-            Text(
-              'Live in the moment and enjoy your Mini 7+, and give your day some instant fun!',
-            ),
-          ],
-        ),
+              Text(
+                  "Live in the moment and enjoy your Mini 7+, and give your day some instant fun!"),
+            ],
+          ),
+        ]),
       ),
     );
   }
