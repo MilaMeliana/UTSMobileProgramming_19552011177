@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../Data/data_19552011177.dart';
+import '../Data/data_19552011177.dart';
 
 class SearchProvider with ChangeNotifier {
   final List<Produk> listProduk;

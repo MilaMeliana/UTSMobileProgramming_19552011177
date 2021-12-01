@@ -50,7 +50,7 @@ class DetailPage extends StatelessWidget {
             ),
             child: IconButton(
               onPressed: () {},
-              icon: const Icon(
+              icon: Icon(
                 Icons.more_vert,
                 color: Colors.white,
               ),
@@ -59,11 +59,11 @@ class DetailPage extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(15),
+        padding: const EdgeInsets.all(15.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 30),
+            SizedBox(height: 30),
             Align(
               alignment: Alignment.center,
               child: Image.asset(
@@ -71,11 +71,11 @@ class DetailPage extends StatelessWidget {
                 width: MediaQuery.of(context).size.width / 1.5,
               ),
             ),
-            const SizedBox(height: 30),
+            SizedBox(height: 30),
             Text.rich(
               TextSpan(
                 children: [
-                  const TextSpan(
+                  TextSpan(
                     text: 'Instax ',
                     style: TextStyle(
                       fontSize: 25,
@@ -95,81 +95,81 @@ class DetailPage extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 8),
-            const Text(
+            SizedBox(height: 8),
+            Text(
               'Be real and fun with the INSTAX MINI 7+ Cool design, colorful and compact, this instant camera is fun and esay to use. Point and shoot and girve your day some fun!',
               style: TextStyle(),
             ),
-            const SizedBox(height: 8),
-            const Text(
+            SizedBox(height: 8),
+            Text(
               'Point & Shoot',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 8),
-            const Text(
+            SizedBox(height: 8),
+            Text(
               'The Mini 7+ is esay to use! Simply point and shoot! With its exposure control adjustment and 60mm fixed focus lens, the Mini 7+ makes it esay for you to be creative and live in the moment.',
             ),
-            const SizedBox(height: 8),
-            const Text(
+            SizedBox(height: 8),
+            Text(
               'Mini But With Full-Size Memories',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 8),
-            const Text(
+            SizedBox(height: 8),
+            Text(
               'Pop it in your wallet, stick it to your wall-the INSTAX Mini film brings you instant 2 x 3 sized photos you can show and tell.\n\nUsing professional hight-quality film technology (as you\'d expect from m Fujifilm), your festival frolicking, sun worshipping, crowd surfing memories that you print will transport you right back into that moment.',
             ),
-            const SizedBox(height: 8),
-            const Text(
+            SizedBox(height: 8),
+            Text(
               'Mini Film',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 8),
-            const Text(
+            SizedBox(height: 8),
+            Text(
               'Mini moments with maximum impact. What’s your next mini moment?',
             ),
-            const SizedBox(height: 8),
-            const Text(
+            SizedBox(height: 8),
+            Text(
               'Plenty of Great Color Choices',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 8),
-            const Text(
+            SizedBox(height: 8),
+            Text(
               'Available in five awesome colors: Lavender, Seafoam Green, Coral, Light Pink & Light Blue',
             ),
-            const SizedBox(height: 8),
-            const Text(
+            SizedBox(height: 8),
+            Text(
               'The Mini 7+ Has Your Back!',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 8),
-            const Text(
+            SizedBox(height: 8),
+            Text(
               'Depending upon the weather conditions, you can easily control brightness to obtain a great picture',
             ),
-            const SizedBox(height: 8),
-            const Text(
+            SizedBox(height: 8),
+            Text(
               'Fun All The Time!',
               style: TextStyle(
-                fontSize: 18,
+                fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 8),
-            const Text(
+            SizedBox(height: 8),
+            Text(
               'Live in the moment and enjoy your Mini 7+, and give your day some instant fun!',
             ),
           ],
@@ -190,8 +190,8 @@ class DetailPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              '\$ ${produk.price!.toStringAsFixed(1)}',
-              style: const TextStyle(
+              '\$ ${produk.price!.toStringAsFixed(2)}',
+              style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
               ),
@@ -206,7 +206,7 @@ class DetailPage extends StatelessWidget {
                 elevation: 0,
               ),
               onPressed: () {},
-              child: const Text(
+              child: Text(
                 'Buy Now',
                 style: TextStyle(
                   color: Colors.white,

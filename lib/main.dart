@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Fuji Film',
+      title: 'Instax FujiFilm',
       home: SplashScreen(),
     );
   }
