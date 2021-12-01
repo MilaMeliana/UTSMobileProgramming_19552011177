@@ -58,6 +58,48 @@ class DetailPage extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar: Container(
+        padding: const EdgeInsets.all(15),
+        height: 90,
+        decoration: BoxDecoration(
+          border: Border(
+            top: BorderSide(
+              color: Colors.black,
+              width: 1,
+            ),
+          ),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              '\$ ${produk.price!.toStringAsFixed(2)}',
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Color(produk.color!),
+                padding: const EdgeInsets.all(15),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                elevation: 0,
+              ),
+              onPressed: () {},
+              child: Text(
+                'Buy Now',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 15,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(15.0),
         child: Column(
@@ -98,7 +140,6 @@ class DetailPage extends StatelessWidget {
             SizedBox(height: 8),
             Text(
               'Be real and fun with the INSTAX MINI 7+ Cool design, colorful and compact, this instant camera is fun and esay to use. Point and shoot and girve your day some fun!',
-              style: TextStyle(),
             ),
             SizedBox(height: 8),
             Text(
@@ -171,48 +212,6 @@ class DetailPage extends StatelessWidget {
             SizedBox(height: 8),
             Text(
               'Live in the moment and enjoy your Mini 7+, and give your day some instant fun!',
-            ),
-          ],
-        ),
-      ),
-      bottomNavigationBar: Container(
-        padding: const EdgeInsets.all(15),
-        height: 90,
-        decoration: BoxDecoration(
-          border: Border(
-            top: BorderSide(
-              color: Colors.black,
-              width: 1,
-            ),
-          ),
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              '\$ ${produk.price!.toStringAsFixed(2)}',
-              style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                primary: Color(produk.color!),
-                padding: const EdgeInsets.all(15),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15),
-                ),
-                elevation: 0,
-              ),
-              onPressed: () {},
-              child: Text(
-                'Buy Now',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                ),
-              ),
             ),
           ],
         ),
