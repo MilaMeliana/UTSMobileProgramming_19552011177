@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fujifilm_19552011177/SplashScreen/splashscreen_19552011177.dart';
+import 'package:fujifilm_19552011177/pages/splashscreen_19552011177.dart';
 
 void main() {
   runApp(MyApp());
