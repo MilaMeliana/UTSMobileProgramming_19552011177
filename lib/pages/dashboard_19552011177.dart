@@ -164,12 +164,11 @@ class _HomePageState extends State<HomePage> {
               ),
               SizedBox(height: 10),
               SizedBox(
-                width: MediaQuery.of(context).size.width / 2,
                 child: Text.rich(
                   TextSpan(
                     children: [
                       TextSpan(
-                        text: 'Instax',
+                        text: 'Instax ',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 15,
